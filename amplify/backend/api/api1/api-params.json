@@ -1,0 +1,42 @@
+{
+    "paths": [
+        {
+            "name": "/test",
+            "lambdaFunction": "lambdaTest01",
+            "privacy": {
+                "private": true,
+                "auth": [
+                    "/POST",
+                    "/GET",
+                    "/PUT",
+                    "/PATCH",
+                    "/DELETE"
+                ]
+            },
+            "policyResourceName": "/test"
+        }
+    ],
+    "resourceName": "api1",
+    "apiName": "api1",
+    "functionArns": [
+        {
+            "lambdaFunction": "lambdaTest01"
+        }
+    ],
+    "privacy": {
+        "auth": 1,
+        "unauth": 0,
+        "authRoleName": "amplify-authcra-devc-60702-authRole",
+        "unAuthRoleName": "amplify-authcra-devc-60702-unauthRole"
+    },
+    "dependsOn": [
+        {
+            "category": "function",
+            "resourceName": "lambdaTest01",
+            "attributes": [
+                "Name",
+                "Arn"
+            ]
+        }
+    ]
+}

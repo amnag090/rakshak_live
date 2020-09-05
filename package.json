@@ -10,7 +10,8 @@
     "lodash": "^4.17.19",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-scripts": "^3.4.1"
+    "react-scripts": "^3.4.1",
+    "react-user-profile": "^1.0.3"
   },
   "resolutions": {
     "set-value": "^2.0.1",

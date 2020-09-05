@@ -1,0 +1,45 @@
+{
+    "paths": [
+        {
+            "name": "/disasters",
+            "lambdaFunction": "disasterPUSH001",
+            "privacy": {
+                "protected": true,
+                "auth": [
+                    "/POST",
+                    "/GET",
+                    "/PUT",
+                    "/PATCH",
+                    "/DELETE"
+                ],
+                "unauth": [
+                    "/GET"
+                ]
+            },
+            "policyResourceName": "/disasters"
+        }
+    ],
+    "resourceName": "api781949f8",
+    "apiName": "api781949f8",
+    "functionArns": [
+        {
+            "lambdaFunction": "disasterPUSH001"
+        }
+    ],
+    "privacy": {
+        "auth": 1,
+        "unauth": 1,
+        "authRoleName": "amplify-authcra-devc-60702-authRole",
+        "unAuthRoleName": "amplify-authcra-devc-60702-unauthRole"
+    },
+    "dependsOn": [
+        {
+            "category": "function",
+            "resourceName": "disasterPUSH001",
+            "attributes": [
+                "Name",
+                "Arn"
+            ]
+        }
+    ]
+}
